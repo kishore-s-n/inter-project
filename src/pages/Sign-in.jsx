@@ -5,7 +5,7 @@ import AuthFooter from '../Components/AuthFooter'
 
 const Signin = () => {
 
-    const ipStyle = "bg-gray-200 p-5 my-5 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50"
+    const ipStyle = "bg-gray-200 p-4 my-5 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50"
     const [formData, setFormData] = useState({
         email: '',
         password: '',
@@ -24,15 +24,11 @@ const Signin = () => {
         setPasswordVisible(!passwordVisible);
     };
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        console.log(formData); // Placeholder for form submission logic
-    };
-
+    
     return (
-        <div className="flex flex-col justify-around items-center h-screen">
-            <form className='w-[300px]'>
-                <h2 className=" text-2xl font-bold mb-4">Welcome Back</h2>
+        <div className="flex flex-col justify-between items-center h-screen">
+            <form className='w-[300px] mt-20'>
+                <h2 className=" text-2xl font-bold mb-10">Welcome Back</h2>
                 <div className="mb-4">
                     <label htmlFor="email" className="block text-sm font-medium text-gray-700">
 
@@ -70,9 +66,10 @@ const Signin = () => {
                         </span>
                     </div>
                 </div>
-                <Link to="/sign-up" className='underline'>Forgot your password?</Link>
+                <Link className='underline'>Forgot your password?</Link>
+
             </form>
-            <AuthFooter btntext="Sign in" />
+            <AuthFooter btntext="Sign in" to="/sign-up" linktxt="Don't have an account?"/>
         </div>
     );
 };
