@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
+import './App.css'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Landingpage from './pages/Landingpage.jsx'
 import Notfoundpage from './pages/Notfoundpage.jsx'

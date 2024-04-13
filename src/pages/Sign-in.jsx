@@ -1,8 +1,7 @@
-// SignIn.js
 import React, { useState } from 'react';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
-import Button from '../Components/Button';
 import { Link } from 'react-router-dom';
+import AuthFooter from '../Components/AuthFooter'
 
 const Signin = () => {
 
@@ -31,7 +30,7 @@ const Signin = () => {
     };
 
     return (
-        <div className="flex justify-center items-center h-screen">
+        <div className="flex flex-col justify-around items-center h-screen">
             <form className='w-[300px]'>
                 <h2 className=" text-2xl font-bold mb-4">Welcome Back</h2>
                 <div className="mb-4">
@@ -73,8 +72,9 @@ const Signin = () => {
                 </div>
                 <Link to="/sign-up" className='underline'>Forgot your password?</Link>
             </form>
+            <AuthFooter btntext="Sign in" />
         </div>
     );
 };
 
-export default Signin;
+export default Signin
