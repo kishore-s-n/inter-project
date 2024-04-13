@@ -1,4 +1,4 @@
-import { Button } from "../Components/Button"
+import Button from "../Components/Button"
 import { Contents } from "../Components/Contents"
 import LandingPgImg2 from "../assets/login-img-2.png"
 
@@ -11,9 +11,10 @@ const Secondpage = () => {
                 <div className="content flex flex-col justify-between my-10 gap-10">
                     <Contents title="Get Burn" para="Let's keep burning to achieve your goals, it hurts only temporarily, if you give up now you will be in pain forever" />
                     <p>So why are we waiting lets start</p>
-                    <div className="authbtns flex">
-                        <Link to="/sign-up"><Button text="Sign Up" /></Link>
-                        <Link to="/sign-in"><Button text="Sign in" /></Link>
+                    <div className="authbtns flex gap-5">
+                        <Button to="/sign-up">Sign Up</Button>
+                        <Button to="/sign-in">Sign In</Button>
+
                     </div>
                 </div>
             </div>

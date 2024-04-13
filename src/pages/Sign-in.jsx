@@ -1,7 +1,7 @@
 const Signin = () => {
     return (
         <>
-            <h2 className="text-lg">Welcome back</h2>
+            <h2 className="text-xl font-semibold font-sans p-7">Welcome Back</h2>
         </>
     )
 }
