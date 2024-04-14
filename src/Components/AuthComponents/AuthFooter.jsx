@@ -1,11 +1,12 @@
-import Button from "./Button"
+import Button from "../Button"
 import { Link } from "react-router-dom"
-import GoogleLogo from "../assets/googlelogo.png"
-import FbLogo from "../assets/fblogo.png"
+import { FaFacebook } from "react-icons/fa"
+import { FcGoogle } from "react-icons/fc"
+
 const AuthFooter = (props) => {
     return (
         <div className="w-full flex flex-col justify-center items-center">
-            <Button to="/Home">
+            <Button to="/WorkoutGoal">
                 {props.btntext}
             </Button>
             <div className="flex items-center my-4 w-full">
@@ -18,10 +19,10 @@ const AuthFooter = (props) => {
             </div>
             <div className="flex gap-10 my-7">
                 <div className="border-black border-4 p-3 rounded-xl">
-                    <img src={GoogleLogo} alt="" className="h-10"/>
+                    <FcGoogle size={30}/>
                 </div>
                 <div className="border-black border-4 p-3 rounded-xl">
-                    <img src={FbLogo} alt="" className="h-10"/>
+                    <FaFacebook size={30} color="Blue" />
                 </div>
             </div>
             <Link to={props.to} className='underline'>{props.linktxt}</Link>

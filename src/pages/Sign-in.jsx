@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-import AuthFooter from '../Components/AuthFooter'
+import AuthFooter from '../Components/AuthComponents/AuthFooter'
+import BackButton from '../Components/Backbtn';
 
 const Signin = () => {
 
@@ -27,6 +28,7 @@ const Signin = () => {
     
     return (
         <div className="flex flex-col justify-between items-center h-screen">
+            <BackButton />
             <form className='w-[300px] mt-20'>
                 <h2 className=" text-2xl font-bold mb-10">Welcome Back</h2>
                 <div className="mb-4">

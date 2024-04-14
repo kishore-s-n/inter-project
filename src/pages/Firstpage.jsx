@@ -3,6 +3,7 @@ import { Contents } from "../Components/Contents"
 
 const Firstpage = () => {
     return (
+        <>
         <div>
             <div className="page bg-white w-full h-screen flex justify-start flex-col items-center lg:flex-row p-5">
                 <img src={LandingPgImg} alt="Landing page image" className="my-8" />
@@ -11,6 +12,7 @@ const Firstpage = () => {
                 </div>
             </div>
         </div>
+        </>
     )
 }
 
