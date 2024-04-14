@@ -1,5 +1,6 @@
+import BackButton from "./Backbtn";
 
-const Schedule = () => {
+const ScheduleGraph = () => {
     const renderHours = () => {
       const hours = [];
       for (let i = 0; i < 24; i++) {
@@ -13,8 +14,8 @@ const Schedule = () => {
     };
   
     return (
-      <div className="bg-gray-100 min-h-screen py-8">
-        <h1 className="text-3xl font-bold text-center mb-4">Today's Schedule</h1>
+      <div className="bg-white-50 min-h-screen py-8">
+        <BackButton />
         <div className="grid grid-cols-24 gap-2">
           {renderHours()}
         </div>
@@ -22,4 +23,4 @@ const Schedule = () => {
     );
   };
   
-  export default Schedule
+  export default ScheduleGraph

@@ -8,6 +8,7 @@ import Signin from './pages/Sign-in.jsx'
 import Signup from './pages/Sign-up.jsx'
 import Home from './pages/Home.jsx'
 import WorkoutGoal from './Components/WorkoutGoal.jsx'
+import Schedule from './pages/Schedule.jsx'
 
 const router = createBrowserRouter([
   {
@@ -34,6 +35,11 @@ const router = createBrowserRouter([
   {
     path: '/Home',
     element: <Home />,
+    errorElement: <Notfoundpage />
+  },
+  {
+    path: '/Schedule',
+    element: <Schedule/>,
     errorElement: <Notfoundpage />
   },
   

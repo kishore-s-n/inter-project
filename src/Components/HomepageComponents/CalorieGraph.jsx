@@ -1,6 +1,7 @@
 
 import React, { useEffect, useRef } from 'react';
 import Chart from 'chart.js/auto';
+import { AiOutlineWarning } from 'react-icons/ai';
 
 const CalorieGraph = () => {
   const chartRef = useRef(null);
@@ -52,6 +53,10 @@ const CalorieGraph = () => {
     <div className="calorie-graph mx-5">
       <h2>Calories Burned by Time</h2>
       <canvas ref={chartRef} />
+      <div className="flex p-2 gap-5  top-[287.31px] bg-gradient-to-r from-[#819DFF] to-white  rounded-[10px]">
+        <AiOutlineWarning color="blue" size={50} />
+        <p className='text-sm'>You've burned fewer calories than yesterday. Time to get moving! </p>
+      </div>
     </div>
   );
 };
