@@ -1,6 +1,6 @@
+import Workout from "../../assets/workout.png"
 
 const Trainlist = () => {
-    const workout="src/assets/workout.png"
   return (
     <div className="w-full my-12 px-5">
         <h1 className="text-xl font-bold text-left mb-7">What Do You Want to Train</h1>
@@ -10,7 +10,7 @@ const Trainlist = () => {
                 <li className="text-sm">Arms</li>
                 <li className="text-sm">Leg</li>
             </ul>
-            <img src={workout} alt="workout image" className="h-24 w-24 bg-slate-200 rounded-full" />
+            <img src={Workout} alt="workout image" className="h-24 w-24 bg-slate-200 rounded-full" />
         </div>
     </div>
   )

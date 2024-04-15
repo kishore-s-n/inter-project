@@ -1,10 +1,12 @@
 import { useState } from "react"
 import WorkoutComp from "../WorkoutComp"
+import  Dumbell  from "../../assets/dumbell.png"
+import Yoga from "../../assets/yoga.png"
 
 const UpcomingWorkouts= ()=>{
-    const[View,setView]=useState('initial')
+    const[view,setView]=useState('initial')
     const HandleClick=()=>{
-        if (View=='initial'){
+        if (view=='initial'){
             setView('detailes')
         }
         else{
@@ -12,8 +14,6 @@ const UpcomingWorkouts= ()=>{
         }
     }
 
-    const Dumbell = "src/assets/dumbell.png"
-    const Yoga = "src/assets/yoga.png"
 
 
 
@@ -25,8 +25,9 @@ const UpcomingWorkouts= ()=>{
                 <span className="text-slate-400 underline cursor-pointer" onClick={HandleClick}>See more</span>
             </div>
             <ul className="w-full flex flex-col gap-3  mt-7">
-                <WorkoutComp imgsrc={Dumbell} title="Full Body WorkOut" datentime="Today, 4pm" name="workout1" id="1"/>
-                <WorkoutComp imgsrc={Yoga} title="Full Body WorkOut" datentime="Today, 4pm" name="workout2" id="2"/>
+                <WorkoutComp imgsrc={Dumbell} title="Full Body WorkOut" datentime="Today, 4pm" />
+                <WorkoutComp imgsrc={Yoga} title="Full Body WorkOut" datentime="Today, 4pm" />
+
             </ul>
         </div>
   )
